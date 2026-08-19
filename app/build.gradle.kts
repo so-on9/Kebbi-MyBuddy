@@ -89,7 +89,7 @@ android {
 
 dependencies {
     implementation ("com.github.bumptech.glide:glide:4.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.appcompat:appcompat:1.8.0")
     implementation("com.google.android.material:material:1.11.0")
     implementation("com.squareup.okhttp3:okhttp:4.7.2")
     implementation("com.squareup.okhttp3:okhttp-urlconnection:4.7.2")

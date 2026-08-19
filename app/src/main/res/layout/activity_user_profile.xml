@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Age Field -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="年齡"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Grade Field -->
+    <EditText
+        android:id="@+id/editTextGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="年級"
+        android:layout_marginTop="8dp"/>
+
+    <!-- mFaceID Field (Read-Only) -->
+    <EditText
+        android:id="@+id/mFaceID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Face ID"
+        android:layout_marginTop="8dp"
+        android:editable="false"/>
+
+    <!-- mName Field (Read-Only) -->
+    <EditText
+        android:id="@+id/mName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Face Name"
+        android:layout_marginTop="8dp"
+        android:editable="false"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="儲存"
+        android:layout_marginTop="16dp"/>
+
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回登入頁面"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

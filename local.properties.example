@@ -1,0 +1,4 @@
+# Copy these entries into local.properties. Never commit production credentials.
+sdk.dir=C\:\\Users\\your-name\\AppData\\Local\\Android\\Sdk
+KEBBI_API_BASE_URL=http://development-server.example:30678
+KEBBI_RELEASE_API_BASE_URL=https://api.example.org

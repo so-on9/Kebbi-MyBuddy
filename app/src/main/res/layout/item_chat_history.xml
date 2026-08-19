@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 顯示名稱 -->
+    <TextView
+        android:id="@+id/textViewSenderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="發送者"
+        android:textStyle="bold"
+        android:textColor="#444444"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- 氣泡區塊 -->
+    <LinearLayout
+        android:id="@+id/chatRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <!-- 左側頭像 (GPT 用) -->
+        <ImageView
+            android:id="@+id/imageViewAvatarLeft"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/adduser"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible" />
+
+        <!-- 對話泡泡 -->
+        <LinearLayout
+            android:id="@+id/messageBubbleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message Text"
+                android:textSize="16sp"
+                android:background="@drawable/bg_bubble_gpt"
+                android:padding="8dp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/textViewDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Time"
+                android:textSize="12sp"
+                android:textColor="#888888"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- 右側頭像 (User 用) -->
+        <ImageView
+            android:id="@+id/imageViewAvatarRight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/adduser"
+            android:layout_marginStart="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

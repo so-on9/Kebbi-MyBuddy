@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="slateblue">#6F58C9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#D3D3D3</color> <!-- 根据您的意图，我添加了一个名为 light_gray 的颜色 -->
+    <!-- 品牌活潑繽紛色 -->
+    <color name="brand_pink">#FF6FB1</color>
+    <color name="brand_orange">#FF9F43</color>
+    <color name="brand_yellow">#FFD644</color>
+    <color name="brand_green">#3AD29F</color>
+    <color name="brand_blue">#4C8CFF</color>
+    <color name="brand_deep">#5A3CF0</color>
+
+    <!-- 文字色 -->
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#9AA0A6</color>
+</resources>

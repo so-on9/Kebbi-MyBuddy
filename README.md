@@ -1,28 +1,20 @@
-# Kebbi / MyBuddy Android App
+# Kebbi / MyBuddy Android 應用程式
 
-Android application for the Nuwa Kebbi robot. The app provides account login,
-face recognition, guided conversation topics, OpenAI Responses API interaction
-through a PHP proxy, chat history, profiles, and achievements.
+這是專為女媧創造 Kebbi 機器人開發的 Android 應用程式。此應用程式提供帳號登入、人臉辨識、引導式對話主題、透過 PHP Proxy 與 OpenAI Responses API 互動、聊天紀錄、個人檔案與成就系統。
 
-## Local setup
+## 本機設定
 
-1. Copy the relevant entries from `local.properties.example` into the local
-   `local.properties` file.
-2. Set `KEBBI_API_BASE_URL` for Debug builds.
-3. Set `KEBBI_RELEASE_API_BASE_URL` to an HTTPS endpoint before building a
-   Release APK.
-4. Open the project in Android Studio and build the `app` module.
+1. 將 `local.properties.example` 中需要的設定複製到本機的 `local.properties` 檔案。
+2. 為 Debug 版本設定 `KEBBI_API_BASE_URL`。
+3. 建置 Release APK 前，將 `KEBBI_RELEASE_API_BASE_URL` 設定為 HTTPS 端點。
+4. 使用 Android Studio 開啟專案，並建置 `app` 模組。
 
-Production credentials belong on the PHP server. Do not place OpenAI keys,
-database passwords, signing keys, Firebase files, or production credentials in
-this repository.
+正式環境的憑證應存放在 PHP 伺服器上。請勿將 OpenAI 金鑰、資料庫密碼、簽署金鑰、Firebase 檔案或其他正式環境憑證放入此儲存庫。
 
-## Build
+## 建置
 
 ```powershell
 .\gradlew.bat :app:assembleDebug
 ```
 
-The Nuwa SDK AAR files under `app/libs` are required by the robot integration.
-Confirm that their redistribution is permitted before making the repository
-public.
+機器人整合功能需要使用 `app/libs` 目錄下的 Nuwa SDK AAR 檔案。將此儲存庫設為公開前，請先確認這些檔案是否允許重新散布。
